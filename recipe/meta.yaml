@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-cloudant" %}
-{% set version = "1.0.1" %}
+{% set version = "2.0.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-cloudant-{{ version }}.tar.gz
-  sha256: 6a7cc527a3811260478ac6d3906d9232b6edc3ed42ec144943e641f24c824080
+  sha256: 06688dcfdb9776477f12f033c76bbc467da37bfa1cf0aa930a0d1163e3a85be9
 
 build:
   number: 0
