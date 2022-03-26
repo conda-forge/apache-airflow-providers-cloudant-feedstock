@@ -1,6 +1,5 @@
 {% set name = "apache-airflow-providers-cloudant" %}
-{% set version = "2.0.2" %}
-
+{% set version = "2.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-cloudant-{{ version }}.tar.gz
-  sha256: 9b05ca76d8b6abe1182902b9037398ad7399daf85ffd6c98c67557cc84858101
+  sha256: 6610a8b9f570d190101a57f64bbc2e420a77ce79586db5a638a7bb2931bcd685
 
 build:
-  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
@@ -36,9 +35,10 @@ test:
 
 about:
   home: https://airflow.apache.org/
-  summary: Provider for IBM Cloudant for Apache Airflow
+  summary: Provider for Apache Airflow. Implements apache-airflow-providers-cloudant package
   license: Apache-2.0
   license_file: LICENSE
+  license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-cloudant/stable/index.html
   dev_url: https://github.com/apache/airflow/
 
