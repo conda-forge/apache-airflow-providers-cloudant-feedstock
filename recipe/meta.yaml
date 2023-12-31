@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_cloudant-{{ version }}.tar.gz
   sha256: 74b1462f63378892d2a0455dc7513d7f3b349b1acd3e4ceab656a2dbcb400ddd
 
 build:
