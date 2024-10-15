@@ -23,7 +23,6 @@ requirements:
     - python >=3.9,<4.dev0
     - ibmcloudant >=0.9.1
     - apache-airflow >=2.8.0
-    - cloudant >=2.13.0
 
 test:
   imports:
