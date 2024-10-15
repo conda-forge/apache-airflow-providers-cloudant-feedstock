@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.8,<4.dev0
+    - python >=3.9,<4.dev0
     - flit-core >=3.2,<4
     - pip
   run:
+    - python >=3.9,<4.dev0
     - ibmcloudant >=0.9.1
-    - python >=3.8
     - apache-airflow >=2.8.0
     - cloudant >=2.13.0
 
