@@ -1,13 +1,13 @@
 {% set name = "apache-airflow-providers-cloudant" %}
-{% set version = "4.0.1" %}
+{% set version = "4.0.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 0f47d02388cde43affc60887efeae215e25b8936215cbd0957d7f87528b7b30e
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 3dcd7cbefe44be59f4defeba843afd8b5846e56bf70021706dd5c8c360b942a6
 
 build:
   noarch: python
@@ -16,13 +16,13 @@ build:
 
 requirements:
   host:
-    - python >=3.9,<4.dev0
+    - python >=3.10,<4.dev0
     - flit-core >=3.2,<4
     - pip
   run:
-    - python >=3.9,<4.dev0
-    - ibmcloudant >=0.9.1
+    - python >=3.10,<4.dev0
     - apache-airflow >=2.8.0
+    - ibmcloudant 0.9.1
 
 test:
   imports:
