@@ -1,15 +1,14 @@
 {% set name = "apache-airflow-providers-cloudant" %}
-{% set version = "4.1.0" %}
+{% set version = "4.1.1" %}
 {% set python_min = "3.10" %}
-
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 6b0a8d3cd862d5c31ef32a074ed0b8576ca6bc7787fd70e72476db4241c3b4da
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_cloudant-{{ version }}.tar.gz
+  sha256: f33a8aba38678f7dde94bd5330cef504532afe51b4f30c537be10a35c5c9369a
 
 build:
   noarch: python
@@ -19,7 +18,7 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - flit-core ==3.10.1
+    - flit-core ==3.11.0
     - pip
   run:
     - python >={{ python_min }}
@@ -39,7 +38,7 @@ about:
   home: https://github.com/apache/airflow/
   summary: Provider package apache-airflow-providers-cloudant for Apache Airflow
   license: Apache-2.0
-  license_file: airflow/providers/cloudant/LICENSE
+  license_file: src/airflow/providers/cloudant/LICENSE
   license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-cloudant/stable/index.html
   dev_url: https://github.com/apache/airflow/
