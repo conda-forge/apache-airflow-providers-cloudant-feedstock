@@ -7,8 +7,6 @@ package:
   version: {{ version }}
 
 source:
-
-build:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_cloudant-{{ version }}.tar.gz
   sha256: f33a8aba38678f7dde94bd5330cef504532afe51b4f30c537be10a35c5c9369a
 
