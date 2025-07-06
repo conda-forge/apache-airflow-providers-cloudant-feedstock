@@ -1,6 +1,7 @@
 {% set name = "apache-airflow-providers-cloudant" %}
 {% set version = "4.2.1" %}
 {% set python_min = "3.10" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
