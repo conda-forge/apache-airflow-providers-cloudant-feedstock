@@ -29,7 +29,7 @@ requirements:
 tests:
   - python:
       imports:
-        - airflow.providers.cloudant
+      - airflow.providers.cloudant
       pip_check: true
       python_version: ${{ python_min }}.*
 
