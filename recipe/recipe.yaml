@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-cloudant
-  version: "4.3.1"
+  version: "4.3.2"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_cloudant-${{ version }}.tar.gz
-  sha256: 1a982a87d801a55f15ea096c9994e0360b30f9391862cc739956ed2015506d83
+  sha256: 72ec7f9fa81a39a1eb78d883bb89a14f2f945a97876fe9b212a9123a829ad518
 
 build:
   noarch: python
@@ -29,7 +29,7 @@ requirements:
 tests:
   - python:
       imports:
-      - airflow.providers.cloudant
+        - airflow.providers.cloudant
       pip_check: true
       python_version: ${{ python_min }}.*
 
